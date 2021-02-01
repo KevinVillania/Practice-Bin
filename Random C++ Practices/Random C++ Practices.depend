@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1612193400 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\humphrey.cpp
+	<iostream>
+	"oreo.h"
+	"humphrey.h"
+
+1612193451 c:\users\kevin holden\documents\github\practice-bin\random c++ practices\oreo.h
+
+1612193474 c:\users\kevin holden\documents\github\practice-bin\random c++ practices\humphrey.h
+
+1612193258 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\oreo.cpp
+	<iostream>
+	"oreo.h"
+	"humphrey.h"
+
+1612193129 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\main.cpp
+	<iostream>
+	"oreo.h"
+	"humphrey.h"
+
