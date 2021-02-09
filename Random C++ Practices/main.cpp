@@ -7,8 +7,8 @@ int main(){
     humphrey hm;
     //hm.bark();
 
-    //oreo ob;
-    //hm.shout();
+    oreo ob;
+    ob.shout();
 
     hm.stand();
 
