@@ -7,6 +7,7 @@ int *thisPointer;
 char *anotherPointer;
 double *doublePointer;
 float *floatPointer;
+
 int a = 5;
 char x = 'x';
 double d = 25;
@@ -22,7 +23,7 @@ doublePointer = &d;
 cout << "Double " << doublePointer << "\n";
 
 floatPointer = &f;
-cout << "float " << floatPointer << "\n";
+cout << "float " << *floatPointer << "\n";
 
 
 }
