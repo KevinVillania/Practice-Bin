@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1612880090 source:c:\users\kevin holden\documents\github\practice-bin\array\main.cpp
+1613125142 source:c:\users\kevin holden\documents\github\practice-bin\array\main.cpp
 	<iostream>
-	<array>
-	<string>
+	<algorithm>
+	<functional>
+	<vector>
 
