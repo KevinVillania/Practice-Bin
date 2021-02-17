@@ -1,24 +1,29 @@
 #include <iostream>
-#include <algorithm>
-#include <functional>
-#include <vector>
 using namespace std;
 
 int main(){
 
-int num;
-int laki;
-int kevinArray[8] {23,4,32,25,7,54,111,9};
+int *thisPointer;
+char *anotherPointer;
+double *doublePointer;
+float *floatPointer;
 
-//laki = kevinArray.size();
+int a = 5;
+char x = 'x';
+double d = 25;
+float f = 19.67;
 
-num = sizeof(kevinArray)/sizeof(kevinArray[0]);
+thisPointer = &a;
+cout << "Int " <<thisPointer << "\n";
 
-sort(kevinArray,kevinArray+num, less<int>());
+anotherPointer = &x;
+cout << "Char " << anotherPointer << "\n";
 
-for(auto a: kevinArray){
+doublePointer = &d;
+cout << "Double " << doublePointer << "\n";
 
-    cout << a << " ";
-}
+floatPointer = &f;
+cout << "float " << *floatPointer << "\n";
+
 
 }
