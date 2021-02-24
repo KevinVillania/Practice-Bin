@@ -1,24 +1,28 @@
 #include <iostream>
-#include <algorithm>
-#include <functional>
-#include <vector>
 using namespace std;
+
+//function prototype
+int passbyValue(int x);
+int passbyReference(int *x);
 
 int main(){
 
-int num;
-int laki;
-int kevinArray[8] {23,4,32,25,7,54,111,9};
+    int kevinAge = 23;
+    int humphreyAge = 20;
 
-//laki = kevinArray.size();
+    passbyReference(&humphreyAge);
+    passbyValue(kevinAge);
 
-num = sizeof(kevinArray)/sizeof(kevinArray[0]);
+    cout << kevinAge << endl; // prints 23
+    cout << humphreyAge << endl; //prints 11
 
-sort(kevinArray,kevinArray+num, less<int>());
-
-for(auto a: kevinArray){
-
-    cout << a << " ";
 }
 
+int passbyValue(int x){
+    //prints 23
+        x = 99;
+}
+
+int passbyReference(int *x){
+        *x = 11;
 }
