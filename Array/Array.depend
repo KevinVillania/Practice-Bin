@@ -1,5 +1,13 @@
 # depslib dependency file v1.0
-1614164048 source:c:\users\kevin holden\documents\github\practice-bin\array\main.cpp
+1614169901 source:c:\users\kevin holden\documents\github\practice-bin\array\main.cpp
 	<iostream>
 	<cmath>
+
+1614170494 source:c:\users\kevin holden\documents\github\practice-bin\array\main2.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<Windows.h>
+	<conio.h>
+	<fstream>
 

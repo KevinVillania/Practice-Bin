@@ -5,10 +5,11 @@ using namespace std;
 
 float volumeCircle(float radius);
 float areaCircle(float radius);
+void passbyReference(int *x);
 
 int main(){
 
-    float radius;
+    int radius;
 
     cout << "Area of Circle" << endl;
     cout << "Enter radius: ";
@@ -17,7 +18,11 @@ int main(){
 
     cout << "Area of circle is equal to " << areaCircle(radius) << endl;
     cout << "Volume of sphere is equal to " << floor(volumeCircle(radius)) << endl;
-    cout << sin(sqrt(2)/2);
+    cout << asin(sqrt(2)/2) << endl;
+
+    passbyReference(&radius);
+
+    cout << radius;
 
 
 }
@@ -38,4 +43,9 @@ float volumeCircle(float radius){
     volume = (4*M_PI * pow(radius,3)) / 3;
     return volume;
 
+}
+
+void passbyReference(int *x){
+
+    *x = 11;
 }
