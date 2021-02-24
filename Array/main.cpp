@@ -16,7 +16,8 @@ int main(){
     cin >> radius;
 
     cout << "Area of circle is equal to " << areaCircle(radius) << endl;
-    cout << "Volume of sphere is equal to " << volumeCircle(radius) << endl;
+    cout << "Volume of sphere is equal to " << floor(volumeCircle(radius)) << endl;
+    cout << sin(sqrt(2)/2);
 
 
 }
