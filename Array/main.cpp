@@ -1,33 +1,40 @@
 #include <iostream>
+#include <cmath>
+
 using namespace std;
+
+float volumeCircle(float radius);
+float areaCircle(float radius);
 
 int main(){
 
-    int num1 = 2;
-    int num2 = 4;
+    float radius;
 
-    cout << "Num1 = " << num1 << endl;
-    cout << "Num2 = " << num2 << endl;
+    cout << "Area of Circle" << endl;
+    cout << "Enter radius: ";
 
-    int temp;
+    cin >> radius;
 
-    /*temp = num1;
-    num1 = num2;
-    num2 = temp;
-
-    cout << "Num1 = " << num1 << endl;
-    cout << "Num2 = " << num2 << endl;*/
-
-    int *ptr1 = &num1;
-    int *ptr2 = &num2;
-
-    ptr1 = &num2;
-    ptr2 = &num1;
-
-    cout << *ptr1 << "\n" << *ptr2;
+    cout << "Area of circle is equal to " << areaCircle(radius) << endl;
+    cout << "Volume of sphere is equal to " << volumeCircle(radius) << endl;
 
 
+}
 
+float areaCircle(float radius){
 
+    float area;
+
+    area = M_PI * pow(radius,2);
+    return area;
+
+}
+
+float volumeCircle(float radius){
+
+    float volume;
+
+    volume = (4*M_PI * pow(radius,3)) / 3;
+    return volume;
 
 }

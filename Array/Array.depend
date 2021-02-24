@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1614160101 source:c:\users\kevin holden\documents\github\practice-bin\array\main.cpp
+1614161605 source:c:\users\kevin holden\documents\github\practice-bin\array\main.cpp
 	<iostream>
+	<cmath>
 
