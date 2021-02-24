@@ -1,28 +1,33 @@
 #include <iostream>
 using namespace std;
 
-//function prototype
-int passbyValue(int x);
-int passbyReference(int *x);
-
 int main(){
 
-    int kevinAge = 23;
-    int humphreyAge = 20;
+    int num1 = 2;
+    int num2 = 4;
 
-    passbyReference(&humphreyAge);
-    passbyValue(kevinAge);
+    cout << "Num1 = " << num1 << endl;
+    cout << "Num2 = " << num2 << endl;
 
-    cout << kevinAge << endl; // prints 23
-    cout << humphreyAge << endl; //prints 11
+    int temp;
 
-}
+    /*temp = num1;
+    num1 = num2;
+    num2 = temp;
 
-int passbyValue(int x){
-    //prints 23
-        x = 99;
-}
+    cout << "Num1 = " << num1 << endl;
+    cout << "Num2 = " << num2 << endl;*/
 
-int passbyReference(int *x){
-        *x = 11;
+    int *ptr1 = &num1;
+    int *ptr2 = &num2;
+
+    ptr1 = &num2;
+    ptr2 = &num1;
+
+    cout << *ptr1 << "\n" << *ptr2;
+
+
+
+
+
 }
