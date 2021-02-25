@@ -1,43 +1,40 @@
 #include <iostream>
-
 using namespace std;
-
-class Enemy{
-    public:
-        virtual void attack(){};
-        //virtual function when called checks functions in derived classes
-};
-
-class Ninja: public Enemy{
-
-public:
-    void attack(){
-
-        cout << "Shurikennn tosss!!" << endl;
-    }
-};
-
-class Monster: public Enemy{
-
-    public:
-        void attack(){
-
-            cout << "Rawr rawr" << endl;
-        }
-};
 
 int main(){
 
-    //Creating an object for Ninja/monster class
-    Ninja n;
-    Monster m;
+int array1[5] {5,9,2,3,4};
+int array2[2][3] {{2,3,4},{3,4,5}};
 
-    //creating a pointer for ninja and monster class
-    Enemy *enemy1 = &n;
-    Enemy *enemy2 = &m;
+//prints array1
+for(auto a: array1){
 
-    enemy1->attack();
-    enemy2->attack();
+    cout << a << " ";
+}
+
+//prints multidimensional array
+for(int row=0; row<2; ++row){
+
+    for(int column=0; column<3; ++column){
+
+        cout << array2[row][column] << " ";
+    }
+    cout << endl;
+}
+
+//get number of elements of array1
+int numElements;
+
+numElements = sizeof(array1)/sizeof(array1[0]);
+
+cout << "Number of elements inside array1 is "<< numElements << endl;
+
+//get number of elements in multidimensional array2
+int numElements2;
+
+numElements2 = sizeof(array2)/sizeof(array2[0][0]);
+cout << "Number of elements inside array2 is "<< numElements2;
+
 
 
 }
