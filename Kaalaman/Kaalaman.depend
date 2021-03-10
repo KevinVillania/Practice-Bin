@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1615348159 source:c:\users\kevin holden\documents\github\practice-bin\kaalaman\main.cpp
+	<iostream>
+	<string>
+	<vector>
+
