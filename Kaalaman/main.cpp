@@ -17,6 +17,12 @@ vector<int> position;
 
 int main(){
 
+string code ="WOOE WEI RIUIOEUROIJ WAEIQRI QIERIUOQ MOIERIOI IOWERQI OCFIOWEUIROIUWREOIIU AFK";
+int numChar;//number of element in a string
+
+numChar = code.length()-8;
+cout << code << "\nNumber of characters: " << numChar <<endl;
+
 cout << "28 = KWNWF LZAJLQ KWNWF HGKL EWJAVAWE\n25 = HTSSJHYNTS JXYFGQNXMJI!........NR NS\n38 = CNBC VRL CNBC VRLC XWN CFX XWN CFX XWN CFX CQANN\n\n";
 
 cout << "Enter number of elements ";

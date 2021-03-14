@@ -1,51 +1,38 @@
 #include <iostream>
-#include <cmath>
-
+#include <algorithm>
+#include <functional>
+#include <vector>
 using namespace std;
-
-float volumeCircle(float radius);
-float areaCircle(float radius);
-void passbyReference(int *x);
 
 int main(){
 
-    int radius;
+int num;
+int laki;
+int kevinArray[8] {23,4,32,25,7,54,111,9};
 
-    cout << "Area of Circle" << endl;
-    cout << "Enter radius: ";
+//laki = kevinArray.size();
 
-    cin >> radius;
+num = sizeof(kevinArray)/sizeof(kevinArray[0]);
 
-    cout << "Area of circle is equal to " << areaCircle(radius) << endl;
-    cout << "Volume of sphere is equal to " << floor(volumeCircle(radius)) << endl;
-    cout << asin(sqrt(2)/2) << endl;
+sort(kevinArray,kevinArray+num, less<int>());
 
-    passbyReference(&radius);
+int *numPointer = &num;
 
-    cout << radius;
+cout << numPointer << endl;
 
 
-}
+for(int i=0; i<num; ++i){
 
-float areaCircle(float radius){
+    int *pointer = num[i];
 
-    float area;
-
-    area = M_PI * pow(radius,2);
-    return area;
+    cout << pointer << endl;
 
 }
 
-float volumeCircle(float radius){
+/*
+for(auto a: kevinArray){
 
-    float volume;
+    cout << &a << " ";
+}*/
 
-    volume = (4*M_PI * pow(radius,3)) / 3;
-    return volume;
-
-}
-
-void passbyReference(int *x){
-
-    *x = 11;
 }
