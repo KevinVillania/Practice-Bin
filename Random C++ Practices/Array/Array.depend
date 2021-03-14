@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1615465311 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\array\main.cpp
-	<iostream>
-	<algorithm>
-	<vector>
-
