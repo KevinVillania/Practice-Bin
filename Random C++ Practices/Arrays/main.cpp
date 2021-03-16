@@ -11,8 +11,8 @@ using namespace std;
 int numArray[10];
 int numElem;
 //get mean median mode
-float mean,mode,total;
-int median,median1,median2;
+float mean,mode,total,median;
+int median1,median2;
 
 //func prototype
 void modeCalc(int arr[], int numElem);
@@ -81,9 +81,11 @@ void medianCalc(int arr[], int numElem){
 
     //median
     median1 = numElem/2;
-    median2 = median1+1;
+    //median2 = median1+1;
 
-    median = (numArray[median1]+numArray[median2])/2;
+    cout << endl << numArray[median1] << " " << numArray[median1-1] << endl;
+
+    median = (numArray[median1]+numArray[median1-1])/2;
     cout << "\nMedian: "<< median;
     }else{
 
