@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1615863462 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\main.cpp
+	<iostream>
+	<iomanip>
+	<algorithm>
+	<cmath>
+
+1615814347 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\mode.cpp
+	<bits/stdc++.h>
+
