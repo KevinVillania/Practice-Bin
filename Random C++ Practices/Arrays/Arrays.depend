@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1615872517 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\main.cpp
+	<iostream>
+	<iomanip>
+	<algorithm>
+	<cmath>
+
+1615814347 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\mode.cpp
+	<bits/stdc++.h>
+
+1615969326 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\2darray.cpp
+	<iostream>
+
+1616052305 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\array practice.cpp
+	<iostream>
+	<algorithm>
+
+1616052619 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\vector search.cpp
+	<iostream>
+	<algorithm>
+	<vector>
+
+1616042914 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\sample find.cpp
+	<bits/stdc++.h>
+
