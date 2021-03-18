@@ -4,8 +4,8 @@ using namespace std;
 
 #define ARRAY_SIZE 10
 
-int numArray[10] = {45,23,4,5,6,11,20,19,21,25};
-int i,index,num, arrSize;
+int numArray[ARRAY_SIZE] = {45,23,4,5,6,11,20,19,21,25};
+int i, num, arrSize;
 
 void numSearch(int arr[], int num);
 
@@ -19,7 +19,7 @@ cout << "Enter number to be search: ";
 cin >> num;
 
 arrSize = sizeof(numArray)/sizeof(numArray[0]);
-cout << "Size of " << arrSize << endl;
+//cout << "Size of " << arrSize << endl;
 
 numSearch(numArray,num);
 
@@ -36,10 +36,8 @@ for( i=0; i<arrSize; ++i){
     }
 }
 
-if(i == arrSize){
+if( i == arrSize){
 
     cout << "Number not found!";
 }
-
-
 }

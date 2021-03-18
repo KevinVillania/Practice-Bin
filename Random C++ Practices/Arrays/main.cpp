@@ -1,6 +1,5 @@
-/*Array practice in C++ and
-solving mean, median, mode of an array
-*/
+//Array practice in C++ and
+//solving mean, median, mode of an array
 
 #include <iostream>
 #include <iomanip>
@@ -31,6 +30,7 @@ numInput(numElem);
 sort(numArray,numArray+numElem);
 //sort(numArray,numArray+numElem, greater<int>());
 
+cout << "Sorted Array: ";
 for(int i=0; i<numElem; ++i){
 
     cout << numArray[i] << " ";
@@ -81,7 +81,6 @@ void medianCalc(int arr[], int numElem){
 
     //median
     median1 = numElem/2;
-    //median2 = median1+1;
 
     cout << endl << numArray[median1] << " " << numArray[median1-1] << endl;
 
