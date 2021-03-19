@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1616140660 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\vector\main.cpp
+	<iostream>
+	<vector>
+	<string>
+
+1616144732 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\vector\vector.cpp
+	<iostream>
+	<vector>
+
+1616147044 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\vector\swap vector.cpp
+	<iostream>
+	<vector>
+
