@@ -1,10 +1,13 @@
 # depslib dependency file v1.0
-1616553863 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\main.cpp
+1616726351 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\main.cpp
 	<iostream>
 	<list>
 	<algorithm>
 	<iterator>
 
 1616576240 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\data types.cpp
+	<iostream>
+
+1616727076 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\pointer.cpp
 	<iostream>
 
