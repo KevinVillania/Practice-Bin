@@ -5,35 +5,31 @@
 #include <string>
 using namespace std;
 
+
+//declaration
+vector<float> vec;
+vector<string> name {"Kevin","Arnel","Villania"};
+
+//iterator
+vector<float>::iterator i;
+vector<string>::iterator a;
+
+//func proto
+void inputElem();
+void print(vector<float> vec);
+
 int main(){
 
-    vector<float> vec;
-    vector<string> name {"Kevin","Arnel","Villania"};
-    vector<float>::iterator i;
-    vector<string>::iterator a;
+    //input function
+    inputElem();
 
-    //inserting float elements inside vector
-    for(int i=0; i<10; ++i){
-
-        vec.push_back(i*10.5);
-    }
-
-    /*
-    //inserting 5 in the first place
-    for(i=vec.begin(); i != vec.end(); ++i){
-    if(i==vec.begin()+1){
-
-        i=vec.insert(i,5);
-    }
-    }*/
+    //inserting 69 in the first place
+    vec.insert(vec.begin()+3,69);
+    vec.erase(vec.begin()+3)
 
     //printing using iterators
-    for(auto i=vec.rbegin(); i != vec.rend(); ++i){
+    print(vec);
 
-        cout << *i << " ";
-    }
-
-    cout << endl;
     //printing without iterator
     for(int i=0; i<vec.size(); ++i){
 
@@ -42,12 +38,27 @@ int main(){
 
     cout << endl;
 
-
     for(a=name.begin(); a != name.end(); ++a){
 
         cout << *a << " ";
     }
-
-
-
 }
+
+void inputElem(){
+
+    //inserting float elements inside vector
+    for(int i=0; i<10; ++i){
+
+        vec.push_back(i*10.5);
+    }
+}
+
+void print(vector<float> vec){
+
+    for(auto i=vec.rbegin(); i != vec.rend(); ++i){
+
+        cout << *i << " ";
+    }
+    cout << endl;
+}
+

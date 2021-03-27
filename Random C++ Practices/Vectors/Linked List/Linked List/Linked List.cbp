@@ -36,11 +36,19 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="main.cpp">
+		<Unit filename="main.cpp" />
+		<Unit filename="pointer.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="pointer.cpp" />
+		<Unit filename="struct and pointer final.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="structure.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -17,7 +17,7 @@ int main(){
 
     //cout << sizeof(num1) << endl;
 
-    num2Pointer = &num2;
+    //num2Pointer = &num2;
 
     //prints out memory address
     cout << num1Pointer << endl << num2Pointer << endl;

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1616726351 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\main.cpp
+1616815298 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\main.cpp
 	<iostream>
 	<list>
 	<algorithm>
@@ -10,4 +10,14 @@
 
 1616727076 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\pointer.cpp
 	<iostream>
+
+1616842931 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\structure and pointer.c
+
+1616843013 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\structure.cpp
+	<iostream>
+	<string>
+
+1616845359 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\vectors\linked list\linked list\struct and pointer final.cpp
+	<iostream>
+	<string>
 

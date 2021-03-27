@@ -44,6 +44,4 @@ int printMem2(int numArray[], int numElements){
 
         cout << &numArray[i] << " ";
     }
-
-    numArray[4] = 26;
 }

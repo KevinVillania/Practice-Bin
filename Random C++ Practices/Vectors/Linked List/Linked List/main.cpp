@@ -7,9 +7,8 @@ using namespace std;
 
 
 //function proto
-void showlist(list<int> testList);
-void showlist2(list<int> testList);
-void showlist3(list<int> testList);
+void printFor(list<int> testList);
+void printWhile(list<int> testList);
 
 int main(){
 
@@ -18,48 +17,50 @@ int main(){
 
     pointer = &beef;
 
-    cout << pointer << endl;
+    //cout << pointer << endl;
 
-// list and iterator declaration
-list<int> testList;
-list<int>::iterator it;
+    // list and iterator declaration
+    list<int> testList;
+    list<int>::iterator it;
 
-//input elements into linked list
-for(int i=0; i<10 ; ++i){
-    testList.push_front(i*5);
-}
+    //input elements into linked list
+    for(int i=0; i<10 ; ++i){
+        testList.push_front(i*5);
+    }
 
-cout << "Linked list using for loop: ";
+    //cout << testList.size();
 
-//sort linked list in ascending order
-testList.sort();
+    //sort linked list in ascending order
+    testList.sort();
 
-showlist(testList);
+    cout << "Linked list using for loop: ";
+    printFor(testList);
 
-cout << endl;
-cout << "Linked list using while loop: ";
-
-showlist2(testList);
-
+    cout << "Linked list using while loop: ";
+    printWhile(testList);
 }
 
 //function to print linked list using for loop
-void showlist(list<int> testList){
+void printFor(list<int> testList){
 
-    list<int>::iterator it;
-    for(it=testList.begin(); it != testList.end(); ++it){
-        cout << &it << " ";
+    //list<int>::iterator it;
+    for( auto it=testList.begin(); it != testList.end(); ++it){
+        cout << *it << " ";
     }
+    cout << endl;
 }
 
 //function to print linked list using while loop
-void showlist2(list<int> testList){
+void printWhile(list<int> testList){
 
     list<int>::iterator it = testList.begin();
     while(it != testList.end()){
-        cout << &it << " ";
+        cout << *it << " ";
         ++it;
     }
+    cout << endl;
 }
+
+
 
 
