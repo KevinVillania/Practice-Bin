@@ -1,55 +1,56 @@
-//New code for finding mode in an array
-// C++ Program for Mode using
-// Counting Sort technique
+// CPP program to find the most frequent element
+// in an array.
 #include <bits/stdc++.h>
 using namespace std;
 
-// Function that sort input array a[] and
-// calculate mode and median using counting
-// sort.
-void printMode(int a[], int n)
+int mostFrequent(int arr[], int n)
 {
-	// The output array b[] will have sorted array
-	int b[n];
+	// Sort the array
+	sort(arr, arr + n);
 
-	// variable to store max of input array which will to have size of count array
-	int max = *max_element(a, a + n);
+    cout << "Sorted array: ";
 
-	// auxiliary(count) array to store count. Initialize count array as 0. Size
-	// of count array will be equal to (max + 1).
-	int t = max + 1;
+    for(int i=0; i<n; ++i){
 
-	int tally[t];
-	for (int i = 0; i < t; i++)
-		tally[i] = 0;
+        cout << arr[i] << " ";
+	}
 
-	// Store count of each element of input array
-	for (int i = 0; i < n; i++)
-		tally[a[i]]++;
-/*
-    for(int i=0; i<t; ++i){
-        cout << tally[i] << " ";
-    }
+	// find the max frequency using linear traversal
+	int max_count = 1, res = arr[5], curr_count = 1;
 
-    cout << endl;
-*/
-	// mode is the index with maximum count
-	int mode = 0;
-	int k = tally[0];
-	for (int i = 1; i < t; i++) {
-		if (tally[i] > k) {
-			k = tally[i];
-			mode = i;
+	//{2 2 2 9 11 11}
+
+	for (int i = 1; i < n; i++) {
+		if (arr[i] == arr[i - 1]){
+			curr_count++;
+		}else{
+            if (curr_count > max_count) {
+                max_count = curr_count;
+                res = arr[i - 1];
+            }else{
+                curr_count = 1;
+            }
 		}
 	}
-	cout << "mode = " << mode;
+
+
+    cout << curr_count << " " << max_count;
+	// If last element is most frequent
+	if (curr_count > max_count)
+	{
+		max_count = curr_count;
+		res = arr[n - 1];
+	}
+    cout << " mode is " ;
+	return res;
 }
 
-// Driver Code
+// driver program
 int main()
 {
-	int a[] = { 4, 11, 2, 9, 1, 2, 5, 3, 6, 5, 4, 1, 1, 1, 22, 22, 20, 22, 22, 22 };
-	int n = sizeof(a) / sizeof(a[0]);
-	printMode(a, n);
+	int arr[] = { 11, 2, 9, 11, 2, 2};
+
+	int n = sizeof(arr) / sizeof(arr[0]);
+	cout << mostFrequent(arr, n);
 	return 0;
 }
