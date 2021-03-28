@@ -1,3 +1,5 @@
+//old code for finding mode of an array
+
 #include <iostream>
 using namespace std;
 
@@ -26,7 +28,7 @@ void modeCalc(int arr[], int numElem){
 
 int main(){
 
-int arr[10] {1,1,1,20,20,30,40,50,60,10};
+int arr[] { 1, 4, 11, 2, 9, 1, 2, 5, 3, 6, 5, 4, 1, 1, 1, 1 };
 modeCalc(arr,10);
 
 }
