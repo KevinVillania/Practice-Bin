@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1617117495 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\oop\oop\main.cpp
+	"Car.h"
+	<iostream>
+	<string>
+
+1617117449 c:\users\kevin holden\documents\github\practice-bin\random c++ practices\oop\oop\car.h
+	<string>
+
