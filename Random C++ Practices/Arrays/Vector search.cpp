@@ -34,11 +34,11 @@ vector<int>::iterator it;
 
 //formula to iterate and compare each element
 it = find(numVector.begin(),numVector.end(),num);
-if(it != numVector.end()){
+    if(it != numVector.end()){
 
-    cout << "Number found";
-}else{
+        cout << "Number found";
+    }else{
 
-    cout << "Number not found";
-}
+        cout << "Number not found";
+    }
 }

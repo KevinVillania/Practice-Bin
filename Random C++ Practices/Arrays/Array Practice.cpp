@@ -7,7 +7,7 @@ using namespace std;
 int numArray[ARRAY_SIZE] = {45,23,4,5,6,11,20,19,21,25};
 int i, num, arrSize;
 
-void numSearch(int arr[], int num);
+int numSearch(int arr[], int num);
 
 int main(){
 
@@ -19,25 +19,25 @@ cout << "Enter number to be search: ";
 cin >> num;
 
 arrSize = sizeof(numArray)/sizeof(numArray[0]);
-//cout << "Size of " << arrSize << endl;
+cout << "Size of array " << arrSize << endl;
 
-numSearch(numArray,num);
+
+cout << "Index = " << numSearch(numArray,num);
 
 }
-
-void numSearch(int arr[], int num){
-
 //linear search algorithm
-for( i=0; i<arrSize; ++i){
-    if(num==numArray[i]){
+int numSearch(int arr[], int num){
 
-        cout << "Number is at index: " << i << endl;
-        break;
+
+    for( i=0; i<arrSize; ++i){
+        if(num==arr[i]){
+
+            return i;
+        }
     }
-}
 
-if( i == arrSize){
+    if( i == arrSize){
 
-    cout << "Number not found!";
-}
+        cout << "Number not found!";
+    }
 }

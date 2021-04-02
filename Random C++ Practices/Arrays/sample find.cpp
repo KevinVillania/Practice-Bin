@@ -1,6 +1,3 @@
-
-// CPP program to illustrate
-// std::find
 // CPP program to illustrate
 // std::find
 #include<bits/stdc++.h>
@@ -21,7 +18,7 @@ int main ()
 	std::cout << "\n";
 
 	// Element to be searched
-	int ser = 50;
+	int ser = 40;
 
 	// std::find function call
 	it = std::find (vec.begin(), vec.end(), ser);

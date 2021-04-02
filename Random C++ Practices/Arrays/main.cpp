@@ -10,7 +10,7 @@ using namespace std;
 int numArray[10];
 int numElem;
 //get mean median mode
-float mean,mode,total,median;
+float mean, median, mode, total;
 int median1,median2;
 
 //func prototype
@@ -26,11 +26,12 @@ cout << "Enter number of elements ";
 cin >> numElem;
 numInput(numElem);
 
-//sorts array in ascending/descending order
+//sorts in ascending/descending order
 sort(numArray,numArray+numElem);
 //sort(numArray,numArray+numElem, greater<int>());
 
 cout << "Sorted Array: ";
+
 for(int i=0; i<numElem; ++i){
 
     cout << numArray[i] << " ";
@@ -46,7 +47,14 @@ modeCalc(numArray,numElem);
 cout << endl;
 }
 
+// Functions
+
+//this function needs rework
 void modeCalc(int arr[], int numElem){
+
+    //sorts array elements and then checks each neighboring
+    //elements if they are alike and then increments
+    //counter before iterating on the next elements
 
     int counter =1;
     int max=0;
@@ -64,6 +72,7 @@ void modeCalc(int arr[], int numElem){
             }
         }else{
             counter = 1; //resets counter
+            mode = 0;
         }
     }
     cout << "\nMode: " << mode;
@@ -77,12 +86,13 @@ cout << "\nMean: " << setprecision(4) << mean;
 
 void medianCalc(int arr[], int numElem){
 
+    //even element checker
     if(numElem % 2 == 0){
 
     //median
     median1 = numElem/2;
 
-    cout << endl << numArray[median1] << " " << numArray[median1-1] << endl;
+    //cout << endl << numArray[median1] << " " << numArray[median1-1] << endl;
 
     median = (numArray[median1]+numArray[median1-1])/2;
     cout << "\nMedian: "<< median;
