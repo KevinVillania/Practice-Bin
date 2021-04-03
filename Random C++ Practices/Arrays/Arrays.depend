@@ -15,7 +15,7 @@
 	<iostream>
 	<algorithm>
 
-1617375871 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\vector search.cpp
+1617445248 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\vector search.cpp
 	<iostream>
 	<algorithm>
 	<vector>
@@ -26,6 +26,13 @@
 1617375680 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\num pattern.cpp
 	<iostream>
 
-1616767018 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\array mem.cpp
+1617373436 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\array mem.cpp
 	<iostream>
+
+1617420407 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\insert.cpp
+	<iostream>
+
+1617444267 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\arrays\search.cpp
+	<iostream>
+	<array>
 
