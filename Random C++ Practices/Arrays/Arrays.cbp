@@ -36,15 +36,19 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="Array Mem.cpp" />
+		<Unit filename="Array Mem.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="Array Practice.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="Vector search.cpp">
+		<Unit filename="Insert.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="Vector search.cpp" />
 		<Unit filename="main.cpp">
 			<Option compile="0" />
 			<Option link="0" />
@@ -54,6 +58,10 @@
 			<Option link="0" />
 		</Unit>
 		<Unit filename="sample find.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="search.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>

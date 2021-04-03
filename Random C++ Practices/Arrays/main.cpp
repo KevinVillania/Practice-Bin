@@ -49,7 +49,7 @@ cout << endl;
 
 // Functions
 
-//this function needs rework
+//code fixed
 void modeCalc(int arr[], int numElem){
 
     //sorts array elements and then checks each neighboring
@@ -72,7 +72,6 @@ void modeCalc(int arr[], int numElem){
             }
         }else{
             counter = 1; //resets counter
-            mode = 0;
         }
     }
     cout << "\nMode: " << mode;
