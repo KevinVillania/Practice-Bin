@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Main-LinkedList.cpp" />
 		<Unit filename="data types.cpp">
 			<Option compile="0" />
 			<Option link="0" />

@@ -48,7 +48,11 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="Vector search.cpp" />
+		<Unit filename="Vector search.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="Vector.cpp" />
 		<Unit filename="main.cpp">
 			<Option compile="0" />
 			<Option link="0" />
