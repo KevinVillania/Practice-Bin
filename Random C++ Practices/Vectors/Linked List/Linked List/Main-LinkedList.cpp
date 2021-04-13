@@ -27,7 +27,7 @@ class List{
 List::List(): head(NULL), curr(NULL), temp(NULL)
 {
 
-
+    //initialize head,curr,temp to NULL value
 }
 
 //add new nodes to the list

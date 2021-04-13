@@ -44,6 +44,7 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="Gaussian Algorithm.cpp" />
 		<Unit filename="Insert.cpp">
 			<Option compile="0" />
 			<Option link="0" />
@@ -52,7 +53,10 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="Vector.cpp" />
+		<Unit filename="Vector.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="main.cpp">
 			<Option compile="0" />
 			<Option link="0" />
