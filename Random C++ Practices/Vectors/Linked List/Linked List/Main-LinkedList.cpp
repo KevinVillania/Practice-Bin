@@ -103,5 +103,31 @@ void List::DeleteNode(int delData){
     delete delPointer;
 }
 
+//prints linked list
+void List::printList(){
+
+    //initializes curr pointer to the head of LL
+    curr = head;
+
+    //traverses curr pointer up to the tail of LL which is set to NULL
+    while(curr != NULL){
+
+        cout << curr ->data << " " << curr << " " << curr->next << endl;
+        curr = curr->next; //points curr to curr->next
+    }
+}
+
+int main(){
+
+    List kevin;
+
+    kevin.addNode(3);
+    kevin.addNode(5);
+    kevin.addNode(7);
+
+    kevin.printList();
+
+}
+
 
 
