@@ -11,31 +11,34 @@ class List{
 
         }*nodePtr;
 
+        //these are pointers
         nodePtr head;
         nodePtr curr;
         nodePtr temp;
 
     public:
         List();
-        void AddData(int addData);
-        void DeleteData(int delData);
-        void PrintList();
+        void addNode(int addData);
+        void deleteNode(int delData);
+        void printList();
 };
 
+//constructor
 List::List(): head(NULL), curr(NULL), temp(NULL){
 
 }
 
-void List::AddData(int addData){
+void List::addNode(int addData){
 
     nodePtr n1 = new node;
 
-    n1->next = NULL;
     n1->data = addData;
+    n1->next = NULL;
 
     if(head != NULL){
-
+        //if may laman ang LL
         curr = head;
+        //traverses LL
 
         while(curr->next != NULL){
 
@@ -43,35 +46,27 @@ void List::AddData(int addData){
         }
 
         curr->next = n1;
-    }else{
 
+    }else{
         head = n1;
     }
 }
 
 
-void List::DeleteData(int delData){
+void List::deleteNode(int delData){
 
-    //initializes a pointer name 'delPointer' that points to NULL
-    nodePtr delPointer = NULL;
+    nodePtr delPtr = NULL;
 
-    //initializes temp and curr to head
-    temp = head;
+    //initializes curr and temp pointers to head
     curr = head;
+    temp = head;
 
-    //Traverses thru the linked list(LL), while-loop executes if curr pointer
-    //is not at the end of the LL and delData is not yet found
-    //If one condition is met, while-loop exits;
+    //traverses LL and checks each node for delData;
     while(curr != NULL && curr->data != delData){
 
-        //traverses LL by moving temp and curr pointer using next pointer
-        //We need to track to pointer to let patching up deleted node in
-        //the middle of the list
-        temp = curr;
+        temp=curr;
         curr = curr->next;
     }
-
-    //We want to check the values of curr
     if(curr == NULL){
 
         cout << delData << " wala sa list\n";
@@ -80,18 +75,11 @@ void List::DeleteData(int delData){
         head = head->next;
     }else{
 
-        //if we need to delete a node in the middle of the LL
-        // we need to patch things up
-        //so the curr pointer is now pointed to curr->next
-        //and the temp->next now points to the curr;
-        delPointer = curr;
+        //node to be deleted is in middle, we need to patch nodes
+        delPtr = curr;
         curr = curr->next;
         temp->next = curr;
     }
 
-    delete delPointer;
+    delete delPtr;
 }
-
-int main(){
-}
-
