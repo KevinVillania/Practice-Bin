@@ -19,6 +19,7 @@ class List{
         List();
         void AddNode(int addData);
         void DeleteNode(int delData);
+        void SearchNode(float searchData);
         void PrintList();
 
 };
@@ -103,8 +104,32 @@ void List::DeleteNode(int delData){
     delete delPointer;
 }
 
+//search for data in LL
+void LinkedList2::SearchNode(float searchData){
+
+    //initializes curr pointer to head of LL
+    curr = head;
+
+    //traverses thru LL while checking for the desired data
+    while(curr != NULL && curr->data != searchData){
+
+        //points curr to next node
+        curr=curr->next;
+    }
+
+    //checks if curr is at the end of LL which points to NULL
+    if(curr == NULL){
+
+        cout << searchData << " wala sa list\n";
+    }else{
+
+        //element is within the LL and prints out its memory address
+        cout << searchData << " is in node " << curr;
+    }
+}
+
 //prints linked list
-void List::printList(){
+void List::PrintList(){
 
     //initializes curr pointer to the head of LL
     curr = head;
@@ -112,7 +137,7 @@ void List::printList(){
     //traverses curr pointer up to the tail of LL which is set to NULL
     while(curr != NULL){
 
-        cout << curr ->data << " " << curr << " " << curr->next << endl;
+        cout << curr->data << " " << curr << " " << curr->next << endl;
         curr = curr->next; //points curr to curr->next
     }
 }
@@ -121,11 +146,12 @@ int main(){
 
     List kevin;
 
-    kevin.addNode(3);
-    kevin.addNode(5);
-    kevin.addNode(7);
+    kevin.AddNode(3);
+    kevin.AddNode(5);
+    kevin.AddNode(7);
+    kevin.DeleteNode(3);
 
-    kevin.printList();
+    kevin.PrintList();
 
 }
 
