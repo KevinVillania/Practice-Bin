@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1619264862 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\binary tree\binary practice\main.cpp
+	<iostream>
+	<time.h>
+	"BinaryTree.h"
+
+1619262941 c:\users\kevin holden\documents\github\practice-bin\random c++ practices\binary tree\binary practice\binarytree.h
+
+1619264541 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\binary tree\binary practice\binarytree.cpp
+	<iostream>
+	<time.h>
+	"BinaryTree.h"
+
