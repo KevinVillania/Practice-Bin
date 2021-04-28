@@ -1,13 +1,14 @@
 #include <iostream>
 #include <time.h>
 #include "BinaryTree.h"
+#include "BSTpractice.h"
 using namespace std;
 
 int main()
 {
 
     int treeArray[10] = {};
-    BinaryTree BT;
+    BSTpractice BT;
 
     srand(time(NULL));
     //inputs array w/ random number up to 100
