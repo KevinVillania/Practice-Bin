@@ -34,6 +34,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="BSTpractice.cpp" />
+		<Unit filename="BSTpractice.h" />
 		<Unit filename="BinaryTree.cpp" />
 		<Unit filename="BinaryTree.h" />
 		<Unit filename="main.cpp" />

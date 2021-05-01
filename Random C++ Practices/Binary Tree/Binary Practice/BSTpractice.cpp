@@ -79,8 +79,41 @@ void BSTpractice::PrintInOrderPrivate(node* Ptr){
 
         cout << "Binary tree is emptry\n";
     }
+}
 
+BSTpractice::node* BSTpractice::ReturnNode(int key){
 
+    return ReturnNodePrivate(key, root);
+}
+
+//similar to search function
+BSTpractice::node* BSTpractice::ReturnNodePrivate(int key, node* Ptr){
+
+    //checks if Ptr points to something
+    if(Ptr != nullptr){
+
+        if(key == Ptr->key){
+
+            return Ptr;
+        }else{
+            //checks if key is less/greater than the key
+            if(key < Ptr->key){
+
+                //goes left for less than
+                return ReturnNodePrivate(key, Ptr->left);
+            }
+            if(key > Ptr->key){
+
+                //goes right for greater than
+                return ReturnNodePrivate(key, Ptr->right);
+            }
+        }
+
+    }else{
+
+        //Ptr points to nothing
+        return nullptr;
+    }
 }
 
 

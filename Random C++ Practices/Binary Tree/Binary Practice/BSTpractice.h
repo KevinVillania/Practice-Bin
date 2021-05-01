@@ -15,12 +15,15 @@ class BSTpractice
 
         void AddLeafPrivate(int key, node* Ptr);
         void PrintInOrderPrivate(node* Ptr);
-
+        node* ReturnNodePrivate(int key, node* Ptr);
     public:
         BSTpractice();
         void AddLeaf(int key);
-        node* CreateLeaf(int key);
         void PrintInOrder();
+        node* CreateLeaf(int key);
+        node* ReturnNode(int key);
+
+
 
 };
 

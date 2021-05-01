@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1619603968 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\binary tree\binary practice\main.cpp
+1619604526 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\binary tree\binary practice\main.cpp
 	<iostream>
 	<time.h>
 	"BinaryTree.h"
@@ -12,7 +12,7 @@
 	<time.h>
 	"BinaryTree.h"
 
-1619604050 c:\users\kevin holden\documents\github\practice-bin\random c++ practices\binary tree\binary practice\bstpractice.h
+1619619010 c:\users\kevin holden\documents\github\practice-bin\random c++ practices\binary tree\binary practice\bstpractice.h
 
 1619604238 source:c:\users\kevin holden\documents\github\practice-bin\random c++ practices\binary tree\binary practice\bstpractice.cpp
 	"BSTpractice.h"
