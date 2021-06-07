@@ -2,41 +2,62 @@
 #include <iostream>
 using namespace std;
 
-void linearSum(int arr[]);
+//#define UINT_MAX sum = 0;
 
 int main(){
 
-    long long number=100000LL; //1M
-    int arr[number];
-    long long sum;
+    int number = 1000000;
+    long long int arr[number];
+    long long int sum = 0L;
 
-    for(int i=1; i<=number; i++){
+    //inputs number series 1 up to number;
+    for(int i=0; i<=number; i++){
 
-        arr[i] = i;
+        arr[i] = i+1;
     }
-
-
-    for(int i=1; i<=number; i++){
+/*
+    for(auto a: arr){
 
         cout << arr[i] << " ";
     }
 
-    cout << endl << arr[1] << " " << arr[number];
-
-//Gauss algorithm to sum series
-/*    int numElements = (sizeof(arr)/sizeof(arr[0]))/2;
-    cout << " elements " << numElements << " ";
-    cout << (arr[1]+arr[10000]) * numElements;
+    cout << endl << "Start: " <<arr[0] << " " << "End: " << arr[number-1];
 */
+    //Gauss algorithm to sum series
+    int multiplier = number/2; //number of elements inside array divided by 2
 
-//linear summing method
-    for(int i=1; i<=number; i++){
+    //cout << "\nmultiplier " << multiplier << endl;
+    cout << arr[0] << " " << arr[number-1] << endl;
 
-        sum += arr[i];
+    if(multiplier % 2 == 0){
+
+        sum = (arr[0]+arr[number-1]) * multiplier;
+
+        cout << sum;
+    }else{
+
+        multiplier = (number-1)/2;
+
+        sum = ((arr[0]+arr[number-2]) * multiplier) + arr[number-1];
+        /*
+        gets the first and second to the last array element
+        then multiplied by half of number of elements then
+        added by the last element of array
+        */
+        cout << sum;
     }
 
-    cout << " " << sum;
 
+/*
+    //linear summing method
+    //long long int sum = 0L;
 
+    for(auto a: arr){
+
+        sum += a;
+    }
+
+    cout << sum;
+*/
 }
 
